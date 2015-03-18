@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.custom.i18n.resources" value="mess" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<package name="joe" extends="struts-default">
+	    <action name="login" class="com.x2.gsm.action.LoginAction">
+	         <result name="input">/WEB-INF/content/login.jsp</result>
+	         <result name="error">/WEB-INF/content/error.jsp</result>
+	         <result name="success">/WEB-INF/content/welcome.jsp</result>
+	    </action>
+	    
+	</package>
+	<package name="x2" extends="json-default">
+	    <action name="query" class="com.x2.gsm.action.QueryAction">
+	         <result type="json">
+	              <param name="noCache">true</param>
+	              <param name="contentType">text/html</param>
+	         </result>
+	    </action>
+	</package> 
+</struts>

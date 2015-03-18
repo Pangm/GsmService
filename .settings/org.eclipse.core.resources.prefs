@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/mess_en_US.properties=ISO-8859-1
+encoding//src/mess_zh_CN.properties=ISO-8859-1
+encoding/<project>=UTF-8
+separateDerivedEncodings=true
